@@ -33,7 +33,8 @@
                                 <a href="#">
                                     <img src="/images/luigi.jpg" alt="game cover" class="w-48 hover:opacity-75 transition ease-in-out duration-150">
                                 </a>
-                                <div class="absolute bottom-0 right-0 w-16 h-16 bg-gray-900 rounded-full" style="right: -20px; bottom: -20px">
+                                <div class="absolute bottom-0 right-0 w-16 h-16 bg-gray-900 rounded-full -mb-5 -mr-5">
+                                {{-- <div class="absolute bottom-0 right-0 w-16 h-16 bg-gray-900 rounded-full" style="right: -20px; bottom: -20px"> --}}
                                     <div class="font-semibold text-xs flex justify-center items-center h-full">80%</div>
                                 </div>
                             </div>
