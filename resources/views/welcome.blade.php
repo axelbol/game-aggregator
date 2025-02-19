@@ -8,7 +8,7 @@
 
         <div class="popular-games text-sm grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 xl:grid-cols-6 gap-12 border-b border-gray-800 pb-16">
             @for ($i = 0; $i < 12; $i++)
-                <div class="game mt-8">
+                <div class="game mt-8 flex flex-col items-center lg:items-start">
                     <div class="relative inline-block">
                         <a href="#">
                             <img src="/images/ff7.jpg" alt="game cover" class="hover:opacity-75 transition ease-in-out duration-150">
@@ -17,7 +17,7 @@
                             <div class="font-semibold text-xs flex justify-center items-center h-full">80%</div>
                         </div>
                     </div>
-                    <a href="#" class="block text-base font-semibold leading-tight hover:text-gray-400 mt-8">Final Fantasy 7 Remake</a>
+                    <a href="#" class="block text-base font-semibold leading-tight hover:text-gray-400 mt-10">Final Fantasy 7 Remake</a>
                     <div class="text-gray-400 mt-1">Playstation 4</div>
                 </div>
             @endfor
