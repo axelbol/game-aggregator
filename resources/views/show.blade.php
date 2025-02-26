@@ -61,9 +61,68 @@
                 <p class="mt-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, placeat distinctio veniam nam omnis similique enim sint quidem porro magnam reiciendis, velit quod dignissimos facere tempore, est vitae voluptas dolorem sapiente optio id animi doloremque blanditiis tenetur. Id eaque quod neque, provident natus pariatur voluptatem saepe, ullam labore, ipsa porro.</p>
 
                 <div class="mt-12">
-                    <button class="flex bg-indigo-500 text-white font-semibold px-4 py-4 hover:bg-blue-600 rounded transition ease-in-out duration-150">Play Trailer</button>
+                    <button class="flex bg-blue-500 text-white font-semibold px-4 py-4 hover:bg-blue-600 rounded transition ease-in-out duration-150">
+                        <svg class="w-6 fill-current" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><path d="M10 16.5l6-4.5-6-4.5v9zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"></path></svg>
+                        <span class="ml-2">Play Trailer</span>
+                    </button>
                 </div>
             </div>
-        </div>
+        </div> <!-- end game details -->
+
+        <div class="images-container border-b border-gray-800 pb-12 mt-8">
+            <h2 class="text-blue-500 uppercase tracking-wide font-semibold">Images</h2>
+            <div class="grid grid-cols-3 gap-12 mt-8">
+                <div>
+                    <a href="#">
+                        <img src="/images/screenshot1.jpg" alt="screenshot1" class="hover:opacity-75 transition ease-in-out duration-150">
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="/images/screenshot2.jpg" alt="screenshot1" class="hover:opacity-75 transition ease-in-out duration-150">
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="/images/screenshot3.jpg" alt="screenshot1" class="hover:opacity-75 transition ease-in-out duration-150">
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="/images/screenshot4.jpg" alt="screenshot1" class="hover:opacity-75 transition ease-in-out duration-150">
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="/images/screenshot5.jpg" alt="screenshot1" class="hover:opacity-75 transition ease-in-out duration-150">
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="/images/screenshot6.jpg" alt="screenshot1" class="hover:opacity-75 transition ease-in-out duration-150">
+                    </a>
+                </div>
+            </div>
+        </div> <!-- end images container -->
+
+        <div class="similar-games-container mt-8">
+            <h2 class="text-blue-500 uppercase tracking-wide font-semibold">Similar Games</h2>
+            <div class="similar-games text-sm grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 xl:grid-cols-6 gap-12">
+                @for ($i = 0; $i < 6; $i++)
+                    <div class="game mt-8">
+                        <div class="relative inline-block">
+                            <a href="#">
+                                <img src="/images/ff7.jpg" alt="" class="hover:opacity-75 transition ease-in-out duration-150">
+                            </a>
+                            <div class="absolute bottom-0 right-0 w-16 h-16 bg-gray-800 rounded-full -mb-5 -mr-5">
+                                <div class="font-semibold text-xs flex justify-center items-center h-full">80%</div>
+                            </div>
+                        </div>
+                        <a href="#" class="block text-base font-semibold leading-tight hover:text-gray-400 mt-10">Final Fantasy 7 Remake</a>
+                        <div class="text-gray-400 mt-1">Playstation 4</div>
+                    </div>
+                @endfor
+            </div>
+        </div> <!-- end similar games container -->
     </div>
 @endsection
