@@ -30,7 +30,7 @@
                         <div class="ml-4 text-xs">Critic <br> Score</div>
                     </div>
 
-                    <div class="flex items-center space-x-4 mt-4 lg:mt-0 lg:ml-12">
+                    <div class="flex items-center space-x-4 mt-4 sm:mt-0 sm:ml-12">
                         <!-- globe -->
                         <div class="w-8 h-8 bg-gray-800 rounded-full flex justify-center items-center ml-4">
                             <a href="#" class="hover:text-gray-400">
@@ -71,7 +71,7 @@
 
         <div class="images-container border-b border-gray-800 pb-12 mt-8">
             <h2 class="text-blue-500 uppercase tracking-wide font-semibold">Images</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-12 mt-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mt-8">
                 <div>
                     <a href="#">
                         <img src="/images/screenshot1.jpg" alt="screenshot1" class="hover:opacity-75 transition ease-in-out duration-150">
@@ -109,7 +109,7 @@
             <h2 class="text-blue-500 uppercase tracking-wide font-semibold">Similar Games</h2>
             <div class="similar-games text-sm grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 xl:grid-cols-6 gap-12">
                 @for ($i = 0; $i < 6; $i++)
-                    <div class="game mt-8">
+                    <div class="game mt-8 flex flex-col items-center lg:items-start">
                         <div class="relative inline-block">
                             <a href="#">
                                 <img src="/images/ff7.jpg" alt="" class="hover:opacity-75 transition ease-in-out duration-150">
