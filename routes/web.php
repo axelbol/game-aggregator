@@ -5,10 +5,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('game.index');
 Route::get('/show', function () {
     return view('show');
-});
+})->name('game.show');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
